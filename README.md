@@ -2,7 +2,7 @@
   💻<br>Portfólio - Guilherme Xavier
 </h1>
 
-<img src="src/assets/img/img-projeto.png" alt="">
+<img src="src/assets/img/readme/page-desktop.png" alt="">
 
 ### 📚 Seções
 
