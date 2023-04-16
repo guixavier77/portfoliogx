@@ -14,7 +14,7 @@ const MenuItem = ({ title }: MenuItemProps) => {
     <li className='  '>
       <a
         href=''
-        className='block text-textWhite font-worksans relative px-2.5  text-lg menuEffect'
+        className='block text-textWhite font-worksans relative px-2.5  text-lg menuEffect s:text-center s:mt-5 s:text-2xl s:py-4 '
       >
         {title}
       </a>
@@ -44,6 +44,12 @@ const LogoItem = ({ href, src, alt }: LogoItemProps) => {
 };
 
 const Header = () => {
+  const [active, setMode] = React.useState(false);
+
+  const ToggleMode = () => {
+    setMode(!active);
+  };
+
   return (
     <div className='center flex py-5 justify-between items-center flex-wrap text-lg'>
       <a href=''>
@@ -51,8 +57,20 @@ const Header = () => {
         <img src={logoGx} alt='' />
       </a>
 
-      <nav>
-        <ul className='flex font-light gap-8 flex-wrap s:hidden '>
+      <nav className=''>
+        <div
+          className='cursor-pointer p-3 hidden  s:block'
+          onClick={ToggleMode}
+        >
+          <div className={`hamburguer ${active ? 'hamburguer-1' : ''}`}></div>
+          <div className={`hamburguer ${active ? 'hamburguer-2' : ''}`}></div>
+          <div className={`hamburguer ${active ? 'hamburguer-3' : ''}`}></div>
+        </div>
+        <ul
+          className={`flex font-light gap-8 flex-wrap  s:menuMobile s:gap-0 s:${
+            active ? 'block animate-show-down ' : 'hidden'
+          }`}
+        >
           <MenuItem title='Home' />
           <MenuItem title='Skills' />
           <MenuItem title='Projetos' />

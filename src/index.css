@@ -24,6 +24,33 @@
   .cardTec {
     grid-template-columns: 100px 100px 100px;
   }
+
+  .progress-value {
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+  }
+
+  .hamburguer-1 {
+    transform: rotate(-45deg) translate(-10px, 8px);
+  }
+  .hamburguer-2 {
+    opacity: 0;
+  }
+  .hamburguer-3 {
+    transform: rotate(45deg) translate(-7px, -5px);
+  }
+
+  @keyframes showDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
 }
 
 @layer components {
@@ -44,5 +71,13 @@
 
   .menuEffect {
     @apply after:bg-blue after:absolute after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:duration-300 hover:text-[#ffff] hover:after:w-full;
+  }
+
+  .hamburguer {
+    @apply w-8 h-[3px] bg-[#fafafa] m-2 duration-300;
+  }
+
+  .menuMobile {
+    @apply flex-col w-full absolute top-24 right-0 z-50 bg-bgsecondary;
   }
 }

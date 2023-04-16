@@ -18,7 +18,23 @@ module.exports = {
       montserrat: ['montserrat', 'sans-serif'],
       worksans: ['Work Sans', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      animation: {
+        'show-down':
+          'show-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   forwards',
+      },
+      keyframes: {
+        'show-down': {
+          '0%': {
+            opacity: 0,
+            transform: 'translate3d(0, -30px, 0)',
+          },
+          to: {
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
+      },
+    },
   },
   plugins: [require('tailwind-scrollbar')],
 };

@@ -1,4 +1,4 @@
-import CardCont from '../components/CardCont';
+import CardCont from '../components/CardContacts';
 import localizacaoLogo from '../../assets/img/icons/localizacao.png';
 import mobileLogo from '../../assets/img/icons/mobile.png';
 import websiteLogo from '../../assets/img/icons/website.png';

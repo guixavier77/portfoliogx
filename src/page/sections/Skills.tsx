@@ -1,7 +1,7 @@
+import React from 'react';
 import websitesIcon from '../../assets/img/icons/coding.svg';
-import LogoItem from '../components/CardSkills';
-import CardTec from '../components/CardTec';
-
+import CardSkill from '../components/CardSkills';
+import CardTec from '../components/CardTech';
 import jsLogo from '../../assets/img/icons/javascript.svg';
 import tsLogo from '../../assets/img/icons/typescript.svg';
 import reactLogo from '../../assets/img/icons/react.svg';
@@ -14,32 +14,32 @@ const Skills = () => {
       <div className='center'>
         <h1 className='title-section '>{'<Skills>'}</h1>
         <div className='flex pt-16 gap-8 flex-wrap justify-center'>
-          <LogoItem
+          <CardSkill
             icon={websitesIcon}
             title='WEBSITES'
             description='Desenvolvimento de sites profissionais, blogs, portfólios, landing pages e e-commerce.'
           />
 
-          <LogoItem
+          <CardSkill
             icon={websitesIcon}
             title='WEBSITES'
             description='Desenvolvimento de sites profissionais, blogs, portfólios, landing pages e e-commerce.'
           />
 
-          <LogoItem
+          <CardSkill
             icon={websitesIcon}
             title='WEBSITES'
             description='Desenvolvimento de sites profissionais, blogs, portfólios, landing pages e e-commerce.'
           />
         </div>
 
-        <div className='flex flex-wrap justify-center pt-10 gap-12 t:grid t:gap-[30px] t:justify-items-center cardTec'>
-          <CardTec src={jsLogo} />
-          <CardTec src={tsLogo} />
-          <CardTec src={reactLogo} />
-          <CardTec src={tailwindLogo} />
-          <CardTec src={nodeLogo} />
-          <CardTec src={mongoLogo} />
+        <div className='flex flex-wrap justify-center pt-10 gap-12 t:grid  t:justify-items-center cardTec '>
+          <CardTec src={jsLogo} tecName='JavaScript' />
+          <CardTec src={tsLogo} tecName='TypeScript' />
+          <CardTec src={reactLogo} tecName='React' />
+          <CardTec src={tailwindLogo} tecName='TailwindCSS' />
+          <CardTec src={nodeLogo} tecName='Node' />
+          <CardTec src={mongoLogo} tecName='MongoDB' />
         </div>
       </div>
     </section>

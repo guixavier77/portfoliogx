@@ -1,5 +1,5 @@
-import CardProj from '../components/CardProj';
-import gxSystems from '../../assets/img/proj-gxsystem.jpg';
+import CardProj from '../components/CardProjects';
+import gxSystems from '../../assets/img/projetos/proj-gxsystem.jpg';
 
 const Projects = () => {
   return (

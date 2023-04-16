@@ -24,13 +24,13 @@ const CardProj = ({
       </p>
       <div className='flex gap-6'>
         <a
-          className='btn  bg-blue border-solid border-blue border-2'
+          className='btn  bg-blue border-solid border-blue border-[1px] transition-all duration-1000 ease-out hover:bg-[transparent] hover:text-[#fff]'
           href={href}
         >
           Demo
         </a>
         <a
-          className='btn border-blue border-2 border-solid text-[#ffff]'
+          className='btn border-blue border-[1px] border-solid text-[#ffff] transition-all duration-1000 ease-out hover:bg-blue hover:text-[#0e091b]'
           href={github}
         >
           GitHub
