@@ -5,7 +5,7 @@ module.exports = {
     screens: {
       d: '1140px',
       t: { min: '768px', max: '1139px' },
-      s: { min: '390px', max: '767px' },
+      s: { max: '767px' },
     },
     colors: {
       bgprimary: '#353543',
@@ -19,6 +19,9 @@ module.exports = {
       worksans: ['Work Sans', 'sans-serif'],
     },
     extend: {
+      boxShadow: {
+        card: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+      },
       animation: {
         'show-down':
           'show-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   forwards',

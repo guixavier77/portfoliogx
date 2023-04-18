@@ -54,17 +54,15 @@
 }
 
 @layer components {
+  .center {
+    @apply container mx-auto t:max-w-3xl  d:px-8 t:px-4 s:px-2  s:max-w-[390px];
+  }
   .title-section {
     @apply font-montserrat font-bold text-5xl uppercase text-[#ffff] text-center after:w-40 after:h-1  after:mx-auto after:bg-blue after:block;
   }
-  .center {
-    @apply d:container  d:mx-auto t:container t:mx-auto s:container s:mx-auto;
-  }
-
   .spaceSection {
     @apply py-16;
   }
-
   .btn {
     @apply py-[0.625rem] px-10 rounded-[0.25rem] font-semibold font-worksans uppercase  s:px-5;
   }

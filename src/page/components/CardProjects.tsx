@@ -14,7 +14,7 @@ const CardProj = ({
   github,
 }: cardProps) => {
   return (
-    <div className='flex flex-col flex-shrink-0 py-8 px-11 w-[31.25rem] h-[31rem] bg-bgsecondary shadow-2xl rounded-lg  select-none s:w-[21.81rem] s:h-[26.56rem]'>
+    <div className='flex flex-col flex-shrink-0 py-8 px-11 w-[31.25rem] h-[31rem] bg-bgsecondary shadow-card rounded-lg  select-none s:w-[21.81rem] s:h-[26.56rem]'>
       <img src={imgProj} alt='' />
       <h3 className='font-montserrat text-[#ebebeb] text-start py-5 uppercase font-semibold text-xl'>
         {titleProj}

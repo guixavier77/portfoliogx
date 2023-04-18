@@ -20,7 +20,7 @@ const CardTec = ({ src, tecName }: cardProps) => {
 
   return (
     <div /*onMouseOver={showMessage} onMouseLeave={hiddenMessage}*/>
-      <a className=' p-3 flex justify-center items-center bg-cardBg h-24 w-24 cursor-pointer rounded-md '>
+      <a className=' shadow-card p-3 flex justify-center items-center bg-cardBg h-24 w-24 cursor-pointer rounded-md '>
         <img src={src} />
       </a>
 
