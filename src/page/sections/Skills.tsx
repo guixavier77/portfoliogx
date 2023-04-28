@@ -1,4 +1,3 @@
-import React from 'react';
 import websitesIcon from '../../assets/img/icons/coding.svg';
 import CardSkill from '../components/CardSkills';
 import CardTec from '../components/CardTech';
@@ -8,12 +7,16 @@ import reactLogo from '../../assets/img/icons/react.svg';
 import tailwindLogo from '../../assets/img/icons/tailwind-css-2.svg';
 import nodeLogo from '../../assets/img/icons/node.svg';
 import mongoLogo from '../../assets/img/icons/mongodb.svg';
+import SectionTitle from '../components/SectionTitle';
 const Skills = () => {
   return (
-    <section className='bg-bgsecondary spaceSection'>
+    <section className='bg-bgsecondary spaceSection' id='Skills'>
       <div className='center'>
-        <h1 className='title-section '>{'<Skills>'}</h1>
-        <div className='flex pt-16 gap-8 flex-wrap justify-center'>
+        <SectionTitle title={'<Skills>'} />
+        <div
+          className='flex pt-16 gap-8 flex-wrap justify-center '
+          data-aos='fade-down'
+        >
           <CardSkill
             icon={websitesIcon}
             title='WEBSITES'
@@ -33,7 +36,10 @@ const Skills = () => {
           />
         </div>
 
-        <div className='flex flex-wrap justify-center pt-10 gap-12 t:grid  t:justify-items-center cardTec '>
+        <div
+          className='flex flex-wrap justify-center pt-10 gap-12 t:grid  t:justify-items-center cardTec  '
+          data-aos='fade-right'
+        >
           <CardTec src={jsLogo} tecName='JavaScript' />
           <CardTec src={tsLogo} tecName='TypeScript' />
           <CardTec src={reactLogo} tecName='React' />

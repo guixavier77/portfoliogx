@@ -2,10 +2,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 import fotoHome from '../../assets/img/foto-header.png';
+
 const Home = () => {
   return (
-    <section className=' bg-bgprimary'>
-      <div className='center grid grid-cols-2 pb-16 txt s:grid-cols-1'>
+    <section data-aos='fade-down' className=' bg-bgprimary ' id='Home'>
+      <div className='center grid grid-cols-2 pb-16 txt s:grid-cols-1 h-full '>
         <div className='pt-20 s:pt-5 '>
           <h2 className='text-[#9b9bb1] font-normal text-4xl font-montserrat d:text-5xl '>
             I'm,
@@ -21,8 +22,9 @@ const Home = () => {
           </p>
 
           <a
-            href=''
-            className='inline-block border-2 border-solid rounded-full py-5 px-8 border-blue text-blue text-lg items-center t:py-[10px] t:px-[16px] hover:border-[#ebebeb] hover:text-[#ebebeb]  hover:duration-1000'
+            href='/public/pdf/CURRÍCULO23.pdf'
+            download
+            className='inline-block border-2 border-solid rounded-full py-5 px-8 border-blue text-blue text-lg items-center t:py-[10px] t:px-[16px] hover:border-[#ebebeb] hover:text-[#ebebeb]  hover:duration-1000 '
           >
             <span className='flex gap-2 items-center '>
               <FontAwesomeIcon icon={faDownload} />

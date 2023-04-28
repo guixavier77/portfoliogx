@@ -3,12 +3,17 @@ import localizacaoLogo from '../../assets/img/icons/localizacao.png';
 import mobileLogo from '../../assets/img/icons/mobile.png';
 import websiteLogo from '../../assets/img/icons/website.png';
 import emailLogo from '../../assets/img/icons/email-contato.png';
+import SectionTitle from '../components/SectionTitle';
 
 const Contacts = () => {
   return (
-    <section className='bg-bgsecondary spaceSection'>
-      <h1 className='title-section '>{'<contatos>'}</h1>
-      <div className='center flex justify-center py-[3.75rem] gap-10 flex-wrap'>
+    <section className='bg-bgsecondary spaceSection' id='Contatos'>
+      <SectionTitle title={'<Contatos>'} />
+      <p>Precisa dos meus serviços?</p>
+      <div
+        className='center flex justify-center py-[3.75rem] gap-10 flex-wrap'
+        data-aos='fade-down'
+      >
         <CardCont
           icon={localizacaoLogo}
           title='Localização'
