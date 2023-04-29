@@ -9,7 +9,7 @@ const Contacts = () => {
   return (
     <section className='bg-bgsecondary spaceSection' id='Contatos'>
       <SectionTitle title={'<Contatos>'} />
-      <p>Precisa dos meus serviços?</p>
+
       <div
         className='center flex justify-center py-[3.75rem] gap-10 flex-wrap'
         data-aos='fade-down'

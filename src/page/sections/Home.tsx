@@ -6,7 +6,7 @@ import fotoHome from '../../assets/img/foto-header.png';
 const Home = () => {
   return (
     <section data-aos='fade-down' className=' bg-bgprimary ' id='Home'>
-      <div className='center grid grid-cols-2 pb-16 txt s:grid-cols-1 h-full '>
+      <div className='center grid grid-cols-2 pb-16 txt s:grid-cols-1'>
         <div className='pt-20 s:pt-5 '>
           <h2 className='text-[#9b9bb1] font-normal text-4xl font-montserrat d:text-5xl '>
             I'm,

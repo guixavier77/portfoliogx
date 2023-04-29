@@ -16,7 +16,7 @@ const App = () => {
     });
   }, []);
   return (
-    <div className='h-screen bg-bgprimary '>
+    <div className=' bg-bgprimary '>
       <div className='bg-bgprimary'>
         <Progress />
         <Header></Header>

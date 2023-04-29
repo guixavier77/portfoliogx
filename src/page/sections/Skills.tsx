@@ -13,7 +13,7 @@ const Skills = () => {
     <section className='bg-bgsecondary spaceSection' id='Skills'>
       <div className='center'>
         <SectionTitle title={'<Skills>'} />
-        <div
+        {/* <div
           className='flex pt-16 gap-8 flex-wrap justify-center '
           data-aos='fade-down'
         >
@@ -34,7 +34,7 @@ const Skills = () => {
             title='WEBSITES'
             description='Desenvolvimento de sites profissionais, blogs, portfólios, landing pages e e-commerce.'
           />
-        </div>
+        </div> */}
 
         <div
           className='flex flex-wrap justify-center pt-10 gap-12 t:grid  t:justify-items-center cardTec  '

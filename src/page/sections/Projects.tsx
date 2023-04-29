@@ -11,7 +11,7 @@ const Projects = () => {
         <SectionTitle title={'<Projetos>'} />
 
         <div
-          className='flex overflow-hidden mt-16 gap-[20px] justify-center flex-wrap'
+          className='flex overflow-hidden  gap-[20px] justify-center flex-wrap'
           data-aos='fade-down'
         >
           {/* PORTFOLIO */}
