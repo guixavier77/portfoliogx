@@ -7,7 +7,7 @@ import Home from './page/sections/Home';
 import Projects from './page/sections/Projects';
 import Skills from './page/sections/Skills';
 import Footer from './page/sections/Footer';
-import Progress from './page/components/Progress';
+import ScrollToTop from './page/components/ScrollToTop';
 
 const App = () => {
   React.useEffect(() => {
@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className=' bg-bgprimary '>
       <div className='bg-bgprimary'>
-        <Progress />
+        <ScrollToTop />
         <Header></Header>
         <Home></Home>
         <Skills></Skills>

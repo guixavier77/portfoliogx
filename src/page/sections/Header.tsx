@@ -4,7 +4,7 @@ import logoLinkedin from '../../assets/img/icons/linkedin.svg';
 import logoGithub from '../../assets/img/icons/github.svg';
 import logoEmail from '../../assets/img/icons/email.svg';
 import logoTelefone from '../../assets/img/icons/telefone.svg';
-import MenuList from '../components/MenuList';
+import MenuOption from '../components/MenuOption';
 import LogoList from '../components/LogoList';
 
 const Header = () => {
@@ -39,10 +39,10 @@ const Header = () => {
             active ? 'block animate-show-down ' : 'hidden'
           }`}
         >
-          <MenuList title='Home' />
-          <MenuList title='Skills' />
-          <MenuList title='Projetos' />
-          <MenuList title='Contatos' />
+          <MenuOption title='Home' />
+          <MenuOption title='Skills' />
+          <MenuOption title='Projetos' />
+          <MenuOption title='Contatos' />
         </ul>
       </nav>
       <div className='flex flex-wrap gap-8 s:hidden '>
